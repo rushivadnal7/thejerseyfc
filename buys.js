@@ -5,25 +5,25 @@ const jerseyQuantity = document.getElementById("jerQuantity");
 const clubName = document.getElementById("clubName");
 
 let currentPrice = 550;
-if(checkBox1.checked){
-currentPrice+=200;
+if (checkBox1.checked) {
+    currentPrice += 200;
 
 }
-if(checkBox2 && checkBox2.checked){
-    currentPrice+=150;
+if (checkBox2 && checkBox2.checked) {
+    currentPrice += 150;
 }
 priceElement.textContent = `₹${currentPrice} Only`;
 // console.log(currentPrice)
-checkBox1.addEventListener("change",e=>{
-    const quantity = +jerseyQuantity.value ;
+checkBox1.addEventListener("change", e => {
+    const quantity = +jerseyQuantity.value;
 
-    if(e.target.checked){
-        currentPrice += (200*quantity);
+    if (e.target.checked) {
+        currentPrice += (200 * quantity);
     }
-    else{
-        currentPrice -= (200*quantity);  
+    else {
+        currentPrice -= (200 * quantity);
     }
-    
+
     priceElement.textContent = `₹${currentPrice} Only  `;
 })
 
@@ -38,13 +38,13 @@ checkBox1.addEventListener("change",e=>{
 // })
 // console.log(currentPrice)
 
-jerseyQuantity.addEventListener("change" , e=>{
-    const quantity = +e.target.value ;
+jerseyQuantity.addEventListener("change", e => {
+    const quantity = +e.target.value;
     console.log(quantity);
-    if(checkBox1.checked){
+    if (checkBox1.checked) {
         currentPrice = 750 * quantity
     }
-    else{
+    else {
         currentPrice = 550 * quantity
     }
     // currentPrice = currentPrice * quantity;
@@ -54,19 +54,19 @@ jerseyQuantity.addEventListener("change" , e=>{
 
 
 
-document.querySelector("#buybtn").addEventListener("click",e =>{
-    if(!localStorage.getItem("mysite")){
+document.querySelector("#buybtn").addEventListener("click", e => {
+    if (!localStorage.getItem("mysite")) {
         localStorage.setItem("mysite", JSON.stringify({}));
     }
-    const obj=JSON.parse(localStorage.getItem("mysite"));
+    const obj = JSON.parse(localStorage.getItem("mysite"));
     obj.clubName = clubName.textContent;
     // console.log(obj)
     obj.quantity = jerseyQuantity.value;
     obj.size = sizeselect.value;
-    if(checkBox1.checked){
+    if (checkBox1.checked) {
         obj.shorts = "with shorts";
     }
-    else{
+    else {
         obj.shorts = "";
     }
     // if(checkBox2.checked){
@@ -75,8 +75,10 @@ document.querySelector("#buybtn").addEventListener("click",e =>{
     // else{
     //     obj.sleeves = "";
     // }
-    obj.finalprice=currentPrice;
+    obj.finalprice = currentPrice;
     localStorage.setItem("mysite", JSON.stringify(obj));
-    checkBox1.checked=false;
+    checkBox1.checked = false;
+    priceElement.textContent = `₹${550} Only  `;
+    jerseyQuantity.value = "1";
     // checkBox2.checked=false; 
 })
