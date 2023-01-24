@@ -1,0 +1,24 @@
+/* NAV STARTS */
+.navbar{
+    background-color: #ff1a1a;
+}
+.links {
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+#a ,#b {
+    border-right: 1px solid whitesmoke;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+/* NAV ENDS */
+
+/* FOOTER STARTS */
+.footlinks{
+    cursor: pointer;
+}
+/* FOOTER ENDS */

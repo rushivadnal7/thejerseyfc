@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Graduate&family=Libre+Barcode+39&family=Roboto+Condensed:wght@300&family=Rozha+One&family=Satisfy&family=Six+Caps&family=Suranna&family=Teko:wght@300;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #131316;
+}
+#head{
+    font-size: x-large;
+    font-weight: 700;
+    color: aliceblue;
+    /* padding: 2px; */
+    background-color: black;
+    border: 2px solid white;
+}
+
+.box{
+    height: 90vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.qrbox{
+    /* width: 100px;
+    height: 100px; */
+    height: 250px;
+}
+#img{
+    width: 300px;
+    height: 300px;
+}
+#upi{
+    color: aliceblue;
+    font-size: xx-large;
+    font-weight: 900;
+}
+#probtn{
+    cursor: pointer;
+    /* width: fit-content; */
+    width: fit-content;
+    margin-left: 120px;
+    background-color: white;
+    color: #131316;
+    padding: 7px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: larger;
+    text-decoration: none;
+}

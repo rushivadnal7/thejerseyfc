@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Teko:wght@300;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #ff1a1a;
+}
+
+.links {
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+
+#a ,#b ,#c{
+    border-right: 1px solid black;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+/* nav ends */
+
+/* BODY STARTS */
+.mainheading{
+    font-family: 'Teko', sans-serif;
+    font-weight: 700 !important;
+}
+.disimgs{
+    height: 374px;
+    width: 374px;
+}
+.leading-relaxed{
+    font-family: 'Suranna', serif;
+}
+.content{
+    padding-left: 7px;
+}
+.extra{
+    width: max-content;
+    height: max-content;
+    display: inline;
+    
+}
+.shorts{
+    padding: 1px 25px;
+    font-size: larger;
+    display: inline-block;
+    font-family: 'Rozha One', serif;
+}
+.buybox{
+    justify-content: space-between;
+}
+input .shorts{
+    width: 40px;
+    height: 40px;
+}
+#price{
+    font-family: 'Suranna', serif;
+}
+/* BODY ENDS */
+
+/* FOOTER STARTS */
+.links{
+    cursor: pointer;
+}
+/* FOOTER ENDS */
+

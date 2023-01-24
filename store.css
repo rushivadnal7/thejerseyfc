@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Graduate&family=Libre+Barcode+39&family=Roboto+Condensed:wght@300&family=Rozha+One&family=Satisfy&family=Six+Caps&family=Suranna&family=Teko:wght@300;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* NAV STARTS */
+
+.navbar{
+    background-color: #ff1a1a;
+}
+.links {
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+#a ,#b ,#c{
+    border-right: 1px solid whitesmoke;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+/* NAV ENDS */
+/* BODY STARTS */
+#body h3{
+    font-family: 'Teko', sans-serif;
+    font-size: large;
+}
+#body h2{
+    font-family: 'Rozha One', serif;
+    font-size: larger;
+    font-weight: 500;
+}
+#body p{
+    font-family: 'Graduate', cursive;
+    /* font-size: large; */
+}
+section{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.boxs{
+    margin: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px
+}
+@media screen and (max-width: 450px) {
+   
+    section{
+        display: grid;
+        grid-template-columns: auto ;
+
+    }
+    .boxs{
+        border-bottom: 0.5px solid black;
+        padding: 7px;
+    }
+  }
+  /* BODY ENDS */
+  /* footer starts */
+  .footlinks{
+    cursor: pointer;
+  }
+  /* footer ends */

@@ -1,0 +1,19 @@
+.navbar{
+    background-color: #ff1a1a;
+}
+.links{
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 0px 4px;
+}
+#a ,#b {
+    border-right: 1px solid black;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+.links{
+    cursor: pointer;
+}
