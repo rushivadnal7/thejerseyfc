@@ -21,7 +21,7 @@ function sendEmail() {
         `,
     })
         .then(function (message) {
-            alert("mail sent successfully")
+            alert("FeeedBack sent successfully")
         });
 
         document.querySelector("#feedback").value= " "   
