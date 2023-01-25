@@ -7,7 +7,7 @@
     cursor: pointer;
     padding: 0px 5px;
 }
-#a ,#b {
+#a ,#b ,#c {
     border-right: 1px solid whitesmoke;
 }
 
