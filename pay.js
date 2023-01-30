@@ -8,8 +8,8 @@ function sendEmail(e) {
         Host: "smtp.elasticemail.com",
         Username: "rushikeshvadnal7@gmail.com",
         Password: "350319117806CC0FA0C9EFA9A91A8462A699",
-        To: 'theteehoodstore7@gmail.com',
-        From: "rushikeshvadnal7@gmail.com",
+        To: 'thejerseyfcstore@gmail.com',
+        From: "theteehoodstore7@gmail.com",
         Subject: "ORDER AND USER DETAILS",
         Body: `
         club Name : ${mySite.clubName} 
