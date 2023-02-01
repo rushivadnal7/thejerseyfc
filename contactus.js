@@ -1,23 +1,24 @@
 // const input = document.querySelector('.idbox');
 function sendEmail() {
-    const customerName = document.getElementById("name");
-    const customerEmail = document.getElementById("email");
-    const customerMessage = document.getElementById("message");
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "rushikeshvadnal7@gmail.com",
-        Password: "350319117806CC0FA0C9EFA9A91A8462A699",
-        To: 'theteehoodstore7@gmail.com',
-        From: "rushikeshvadnal7@gmail.com",
-        Subject: "CONTACT US MESSAGE",
-        Body: `
-        Name : ${customerName.value}
-        Email : ${customerEmail.value}
-        Message : ${customerMessage.value}
-        `,
-    })
-        .then(function (message) {
-            alert("mail sent successfully")
-        });
+    const customerName = document.getElementById("name").value;
+    const customerEmail = document.getElementById("email").value;
+    const customerMessage = document.getElementById("message").value;
+    const feedback = document.getElementById("feedback").value;
+    const contactobj = {
+        customerName, customerEmail, customerMessage, feedback
+    }
+    console.log(contactobj);
+
+    fetch('https://jersey-fc-default-rtdb.firebaseio.com/contact.json', {
+        method: 'POST',
+        // body: JSON.stringify(contactobj),
+        body: JSON.stringify(contactobj),
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    }).then(response => response.json())
+        .then(data => console.log(data))
+        .catch(err=>console.error(err));
 }
-document.querySelector("#btn").addEventListener("click",sendEmail);
+
+document.querySelector("#btn").addEventListener("click", sendEmail);
