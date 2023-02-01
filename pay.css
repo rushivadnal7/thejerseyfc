@@ -25,10 +25,13 @@
     /* width: 100px;
     height: 100px; */
     height: 250px;
+    display: grid;
+    justify-content: center;
 }
 #img{
-    width: 315px;
+    /* width: ; */
     height: 300px;
+    justify-content: center;
 }
 #upi{
     color: black;
@@ -42,9 +45,9 @@
 #probtn{
     cursor: pointer;
     /* width: fit-content; */
-    width: fit-content;
-    margin-left: 88px;
+    /* width: fit-content; */
     background-color: white;
+    text-align: center;
     color: #131316;
     padding: 7px;
     font-family: 'Teko', sans-serif;
@@ -52,5 +55,6 @@
     border: 2px solid black;
     border-radius: 10px;
     font-size: larger;
+    justify-content: center;
     text-decoration: none;
 }
