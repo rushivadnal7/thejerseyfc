@@ -9,17 +9,21 @@
   <link rel="stylesheet" href="buys.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="information.js" defer></script>
   <script src="buys.js" defer></script>
   <script src="footer.js" defer></script>
+  <script src="pay.js" defer></script>
   <script src="wpchat.js" defer></script>
 </head>
+
+
 
 <body>
   <!-- NAV STARTS -->
   <header class="navbar  body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <nav id="nav" class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-        <a id="a" href="jerseyhome.html" class="links">Home</a>
+        <a id="a" href="jerseyhome.html" class="links">Home </a>
         <a id="b" href="all.html" class="links">All </a>
         <a id="c" href="season.html" class="links">Season 2022/23 </a>
         <a id="d" href="nationalteam.html" class="links">National Team </a>
@@ -68,25 +72,25 @@
               </svg>
               <span class="text-gray-600 ml-3">4 Reviews</span>
             </span>
-
+ 
           </div>
           <p class="leading-relaxed">Master Copy Jersey <br> Embroidery Batches</p>
         </div>
           <div class="flex mt-6 items-center pb-5 ">
-            <!--  -->
+         
             <div class="flex ml-6 items-center">
               <div >
                 <label for="Quantity-product-template">Quantity</label>
-                <input type="number" id="Quantity-product-template" name="quantity" value="1" min="1" pattern="[0-9]*"
+                <input type="number" id="jerQuantity" name="quantity" value="1" min="1" pattern="[0-9]*"
                   class="product-form__input product-form__input--quantity" data-quantity-input="">
               </div>
               <span class="mr-3">Size</span>
               <div class="relative">
-                <select class="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
+                <select id="sizeselect" class="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
                   <!-- class="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10"   -->
-                  <option>M</option>
-                  <option>L</option>
-                  <option>XL</option>
+                  <option  value="42">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
                 </select>
                 <span
                 class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
@@ -98,28 +102,28 @@
             </div>
           </div>
         </div>
+       
         
-
-          <div class="shorts border-b-2 border-gray-100 mb-5">
-            <input type="checkbox" id="checkbox1"  >
-            <label for="checkbox1">With Shorts</label>
-          </div>
-          
-          <!-- <div class="shorts border-b-2 border-gray-100 mb-5">
-            <input type="checkbox" id="checkbox2" >
-            <label for="checkbox2">full Sleeves</label><br>
-          </div> -->
+        <div class="shorts border-b-2 border-gray-100 mb-5">
+          <input type="checkbox" id="checkbox1"  >
+          <label for="checkbox1">With Shorts</label>
+        </div>
+        
+        <!-- <div class="shorts border-b-2 border-gray-100 mb-5">
+          <input type="checkbox" id="checkbox2" >
+          <label for="checkbox2">full Sleeves</label><br>
+        </div> -->
         
           
 
-          <div class="flex">
+          <div class="flex buybox">
             <span id="price" class="title-font font-medium text-2xl text-gray-900">₹499 only</span>
+            <a href="signup.html">
             <button id="buybtn"
               class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
-              <a href="signup.html">
                 BUY
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>
       </div>
