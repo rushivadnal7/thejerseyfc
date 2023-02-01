@@ -1,5 +1,4 @@
-// email    
-// const input = document.querySelector('.idbox');
+
 function sendEmail(e) {
     e.preventDefault();
     const mySite = JSON.parse(localStorage.getItem("mysite"));
