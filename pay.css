@@ -3,7 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    background-color: #131316;
+    background-color: white;
 }
 #head{
     font-size: x-large;
@@ -31,13 +31,13 @@
     height: 300px;
 }
 #upi{
-    color: aliceblue;
+    color: black;
     font-size: xx-large;
     font-weight: 900;
 }
 .data{
-    background-color: white;
-    padding: 5px;
+    /* background-color: white; */
+    padding: 15px;
 }
 #probtn{
     cursor: pointer;
