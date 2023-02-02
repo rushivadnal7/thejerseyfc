@@ -6,4 +6,5 @@ const MYAPP = {
     fullSleeves : false,
     finalPrice : 0,
     fullName :""
+    
 }

@@ -2,6 +2,11 @@
 function sendEmail(e) {
     e.preventDefault();
     const mySite = JSON.parse(localStorage.getItem("mysite"));
+    // const obj=JSON.parse(localStorage.getItem("mysite"));
+    // obj.upiname=upiname.value;
+    // localStorage.setItem("mysite", JSON.stringify(obj));
+    // console.log(obj)
+    const upiName = document.getElementById("upiname").value;
     // console.log(mySite)
     // Email.send({
     //     Host: "smtp.elasticemail.com",
@@ -44,14 +49,13 @@ function sendEmail(e) {
     
     fetch('https://jersey-fc-default-rtdb.firebaseio.com/users.json', {
         method: 'POST',
-        body: JSON.stringify(mySite),
+        body: JSON.stringify(mySite, upiName),
         headers: {
             'Content-Type': 'application/json',
         },
     }).then(response => response.json())
         .then(data => console.log(data));
 }
-
 document.querySelector("#probtn").addEventListener("click", sendEmail);
 
 function alerthome(){
