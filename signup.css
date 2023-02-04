@@ -13,7 +13,7 @@ body {
     /* background-color: #ff1a1a; */
     /* background-color: #d0e1e6;  #2F4454  #DA7B93*/
     /* background-color: #EFEFEF; */
-    background-color: #131316;
+    background-color: white;
 
 }
 
@@ -29,9 +29,9 @@ body {
 .info {
     width: 470px;
     height: 470px;
-    background-color: transparent;
+    background-color: white;
     border-radius: 5%;
-    border: 1.7px solid #EFEFEF;
+    border: 1.7px solid #00BFFF;
     /* box-shadow: 5px 5px 5px #666666; */
 }
 
@@ -39,7 +39,7 @@ body {
     display: block;
     /* font-family: 'BungeeSpice-Regular',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif 'Arial Narrow Bold', sans-serif; */
     font-weight: 1000;
-    color: #EFEFEF;
+    color: #00BFFF;
     font-size: larger;
     margin: 5px;
     text-align: center;
