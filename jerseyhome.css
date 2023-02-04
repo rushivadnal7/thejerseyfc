@@ -28,7 +28,7 @@
     height: 80px;
     display: flex;
     font-weight: 1000;
-    font-size: small;
+    font-size: larger;
     justify-content: space-around;
     align-items: center;
     /* box-shadow: 2px 0px 3px grey; */
