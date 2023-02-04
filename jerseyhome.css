@@ -27,8 +27,8 @@
     width: 100%;
     height: 80px;
     display: flex;
-    font-weight: 700;
-    font-size: medium;
+    font-weight: 1000;
+    font-size: small;
     justify-content: space-around;
     align-items: center;
     /* box-shadow: 2px 0px 3px grey; */
