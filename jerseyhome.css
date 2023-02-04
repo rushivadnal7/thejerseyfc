@@ -27,11 +27,11 @@
     width: 100%;
     height: 80px;
     display: flex;
-    font-weight: 1000;
-    font-size: larger;
+    font-weight: 700;
+    font-size: medium;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 2px 0px 3px grey;
+    /* box-shadow: 2px 0px 3px grey; */
     text-align: center;
 }
 

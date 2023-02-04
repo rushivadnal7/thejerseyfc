@@ -1,11 +1,9 @@
-// $(' toggle i').Click(function(){
-//     $('ul').toggle('show');
-// });
-const changeprices = function(price){
+const changeprices = function (price) {
     document.querySelectorAll(".txt p").forEach(el => {
-        // console.log(el.textContent)
-        el.textContent= price;
+        el.textContent = price;
+        
     })
 }
-
-changeprices("₹550 only")
+let prevPrice = "₹800"
+let newPrice = "₹550 only"
+changeprices(`${newPrice}`)
