@@ -38,6 +38,11 @@
     font-size: xx-large;
     font-weight: 900;
 }
+#upiname{
+    color: white;
+    font-size: larger;
+    background-color: #131316;
+}
 .data{
     /* background-color: white; */
     padding: 15px;
@@ -46,7 +51,7 @@
     cursor: pointer;
     /* width: fit-content; */
     /* width: fit-content; */
-    background-color: white;
+    background-color: #00BFFF;
     text-align: center;
     color: #131316;
     padding: 7px;

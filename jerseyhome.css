@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary: orangered;
+    --primary: #00BFFF;
     --secondary: black;
     --light: gray;
 }
@@ -21,7 +21,8 @@
 }
 
 .nav1 {
-    background-color: #ff1a1a;
+    /* background-color: #ff1a1a; */
+    background-color: #00BFFF;
     color: whitesmoke;
     width: 100%;
     height: 80px;
@@ -123,3 +124,7 @@ section{
     color: aliceblue;
     text-decoration: underline;
 } */
+
+footer{
+    background-color: #0076CE;
+}
