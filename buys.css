@@ -41,11 +41,18 @@
 .content{
     padding-left: 7px;
 }
+.quansize{
+    display: flex;
+    align-items: center;
+}
 .extra{
     width: max-content;
     height: max-content;
     display: inline;
     
+}
+#jerquantity{
+    width: 50%;
 }
 .shorts{
     padding: 1px 25px;
