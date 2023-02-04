@@ -61,31 +61,12 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#fname,
-#lname {
-    /* width: 15em; */
-}
-
 #add {
     height: 4em;
     width: 92%;
     /* display: flex; */
 }
 
-#city,
-#state {
-    /* width: 15em; */
-}
-
-#num,
-#land {
-    /* width: 15em; */
-}
-
-#pin,
-#mail {
-    /* width: 15em; */
-}
 #btn{
     font-size: larger;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -93,6 +74,7 @@ body {
     padding: 0.3em 1.3em;
     display: inline-block;
     color: #EFEFEF;
+    background-color: #00BFFF;
     text-decoration: none;
     border: 2px solid white;
     margin-top: -2px;
