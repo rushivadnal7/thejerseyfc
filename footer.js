@@ -16,6 +16,8 @@ function sendfeedback(){
         },
     }).then(response => response.json())
     .then(data => console.log(data));
+    location.reload();
+    alert("ThankYou , Your Feedback has been Received ")
 }
 
 document.querySelector("#feedbackbtn").addEventListener("click",sendfeedback);

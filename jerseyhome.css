@@ -54,9 +54,18 @@
 #nav a:hover{
     text-decoration: underline;
     color: black;
+    
 }
 .search{
 padding-right: 17px;
+}
+
+.posters{
+    width: 100%;
+    height: 100px ;
+}
+#posterimg{
+    width: 300px;
 }
 /* nav ends */
 

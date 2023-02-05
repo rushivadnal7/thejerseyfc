@@ -19,6 +19,8 @@ function sendEmail() {
     }).then(response => response.json())
         .then(data => console.log(data))
         .catch(err=>console.error(err));
+    location.reload();
+    alert("ThankYou , Your Message has been Received ")    
 }
 
 document.querySelector("#btn").addEventListener("click", sendEmail);
