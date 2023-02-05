@@ -25,7 +25,7 @@
     "ctaText":"Start Chat",
     "borderRadius":"25",
     "autoShow":false,
-    "phoneNumber":"8788290414"
+    "phoneNumber":"918788290414"
 }
 };
   s.onload = function() {
