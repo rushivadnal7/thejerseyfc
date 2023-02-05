@@ -3,7 +3,7 @@ const changeprices = function (price) {
         el.textContent = price;
         // el.style.textDecoration = "line-through";
         el.innerHTML = `<span  id="prevprice" style="text-decoration: line-through" style="font-size: medium">₹${prevPrice}</span> 
-        <span  id="newprice" style="font-size: larger"> ₹${newPrice} only </span>`;
+        <span  id="newprice" style="font-size: x-large"> ₹${newPrice} only </span>`;
         
     })
 }
