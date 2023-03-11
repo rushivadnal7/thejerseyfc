@@ -12,7 +12,7 @@ if (checkBox1.checked) {
 if (checkBox2 && checkBox2.checked) {
     currentPrice += 150;
 }
-priceElement.textContent = `₹${currentPrice} Only`;
+priceElement.textContent = `₹${currentPrice} Only + 50 shipping charges `;
 // console.log(currentPrice)
 checkBox1.addEventListener("change", e => {
     const quantity = +jerseyQuantity.value;
@@ -24,7 +24,7 @@ checkBox1.addEventListener("change", e => {
         currentPrice -= (150 * quantity);
     }
 
-    priceElement.textContent = `₹${currentPrice} Only  `;
+    priceElement.textContent = `₹${currentPrice} Only`;
 })
 
 // checkBox2.addEventListener("change",e=>{
@@ -49,7 +49,7 @@ jerseyQuantity.addEventListener("change", e => {
     }
     // currentPrice = currentPrice * quantity;
     // currentPrice+= (+e.target.value);
-    priceElement.textContent = `₹${currentPrice} Only  `;
+    priceElement.textContent = `₹${currentPrice} Only + 50 shipping charges   `;
 });
 
 
