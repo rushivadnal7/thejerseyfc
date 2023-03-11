@@ -4,6 +4,7 @@ const priceElement = document.getElementById("price");
 const jerseyQuantity = document.getElementById("jerQuantity");
 const clubName = document.getElementById("clubName");
 
+fetch('https://jersey-fc-default-rtdb.firebaseio.com/users.json').then(res=>res.json()).then(data=>console.log(data))
 
 let currentPrice = 500;
 if (checkBox1.checked) {
@@ -79,7 +80,7 @@ document.querySelector("#buybtn").addEventListener("click", e => {
     obj.finalprice = currentPrice;
     localStorage.setItem("mysite", JSON.stringify(obj));
     checkBox1.checked = false;
-    priceElement.textContent = `₹${500 + 50} Only  `;
+    priceElement.textContent = `₹${500} Only`;
     jerseyQuantity.value = "1";
     // checkBox2.checked=false; 
 })

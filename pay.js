@@ -2,10 +2,9 @@
 function sendEmail(e) {
     e.preventDefault();
    
-    const upiName = document.getElementById("upiname").value;
+    // const upiName = document.getElementById("upiname").value;
     // console.log(upiName)
     const obj=JSON.parse(localStorage.getItem("mysite"));
-    obj.upiname=upiName;
     localStorage.setItem("mysite", JSON.stringify(obj));
     // console.log(obj)
     // console.log(mySite)
@@ -23,8 +22,8 @@ function sendEmail(e) {
 document.querySelector("#probtn").addEventListener("click", sendEmail);
 
 function alerthome(){
-    alert("Wait for a While , Your order confirmation and tracking code will be sent to your Whatsapp number")
-    window.open("index.html")
+    // alert("Wait for a While , Your order confirmation and tracking code will be sent to your Whatsapp number")
+    // window.open("index.html")
 }
 
 // Email.send({
