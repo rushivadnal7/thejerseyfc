@@ -4,6 +4,7 @@ const priceElement = document.getElementById("price");
 const jerseyQuantity = document.getElementById("jerQuantity");
 const clubName = document.getElementById("clubName");
 
+
 let currentPrice = 500;
 if (checkBox1.checked) {
     currentPrice += 150;
@@ -12,7 +13,7 @@ if (checkBox1.checked) {
 if (checkBox2 && checkBox2.checked) {
     currentPrice += 150;
 }
-priceElement.textContent = `₹${currentPrice} Only + 50 shipping charges `;
+priceElement.textContent = `₹${currentPrice} Only`;
 // console.log(currentPrice)
 checkBox1.addEventListener("change", e => {
     const quantity = +jerseyQuantity.value;
@@ -78,7 +79,7 @@ document.querySelector("#buybtn").addEventListener("click", e => {
     obj.finalprice = currentPrice;
     localStorage.setItem("mysite", JSON.stringify(obj));
     checkBox1.checked = false;
-    priceElement.textContent = `₹${500} Only  `;
+    priceElement.textContent = `₹${500 + 50} Only  `;
     jerseyQuantity.value = "1";
     // checkBox2.checked=false; 
 })
