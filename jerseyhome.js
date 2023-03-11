@@ -8,5 +8,5 @@ const changeprices = function (price) {
     })
 }
 let prevPrice = "800"
-let newPrice = "450"
+let newPrice = "500"
 changeprices(`${prevPrice} ${newPrice}`)
