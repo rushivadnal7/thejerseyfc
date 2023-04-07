@@ -1,10 +1,14 @@
 
+const paymentMethodCOD = document.getElementById("codbtn");
+const paymentMethodONLINE = document.getElementById("onlbtn");
 function sendEmail(e) {
     e.preventDefault();
    
     // const upiName = document.getElementById("upiname").value;
     // console.log(upiName)
     const obj=JSON.parse(localStorage.getItem("mysite"));
+    obj.COD = paymentMethodCOD.value;  
+    obj.ONLINE = paymentMethodONLINE.value;  
     localStorage.setItem("mysite", JSON.stringify(obj));
     // console.log(obj)
     // console.log(mySite)
