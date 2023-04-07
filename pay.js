@@ -32,8 +32,8 @@ document.querySelector("#probtn").addEventListener("click", sendEmail);
 // }
 
 function alerthome(){
-    // alert("Wait for a While , Your order confirmation and tracking code will be sent to your Whatsapp number")
-    // window.open("index.html")
+    alert("Wait for a While , Your order confirmation and tracking code will be sent to your Whatsapp number")
+    window.open("index.html")
 }
 
 // Email.send({
