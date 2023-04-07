@@ -21,6 +21,16 @@ function sendEmail(e) {
 }
 document.querySelector("#probtn").addEventListener("click", sendEmail);
 
+// function check(){
+//     var onlinebtn = document.getElementById("onlbtn");
+//     if(onlinebtn==sel){
+
+//     }
+//     var img = document.createElement('img');
+//     img.src= "url('qrcode.jpeg')"
+//     document.getElementById("qrcode").appendChild(img);
+// }
+
 function alerthome(){
     // alert("Wait for a While , Your order confirmation and tracking code will be sent to your Whatsapp number")
     // window.open("index.html")

@@ -19,19 +19,32 @@
         </h1>
     </marquee>
 
-    <div class="qrbox">
-        <img id="img" src="qrcode.jpeg" alt="" srcset="">
-    </div>
-    <div class="box">
-        <div class="idbox">
-            <label id="upi"> UPI : 9960019555@ybl </label>
+    <div class="paymeths">
+
+        <div class="cod">
+            <input type="radio" name="cod" id="codbtn">
+            <label>Cash On Delivery</label>
         </div>
 
-        <label  for="">50₹ Shipping charges </label>
-        <!-- <input class="data" type="text" placeholder="Enter your UPI name *" id="upiname"> -->
-        <!-- <button id="probtn"> <a href="lastpage.html"> PAY </a></button> -->
+        <div class="onl">
+            <input type="radio" name="cod" id="onlbtn" >
+            <label>Online Payment</label>
+        </div>
+
+        <div class="qrimg" id="qrcode">
+            <img src="qrcode.jpeg" alt="QR CODE">
+        </div>
+    </div>
+
+
+
+    <!-- <label  for="">50₹ Shipping charges </label> -->
+    <!-- <input class="data" type="text" placeholder="Enter your UPI name *" id="upiname"> -->
+    <!-- <button id="probtn"> <a href="lastpage.html"> PAY </a></button> -->
+    <div class="payedbtn">
         <a  onclick="alerthome()" id="probtn" >Click When PAID</a>
     </div>
+    
 </body>
 
 </html>
