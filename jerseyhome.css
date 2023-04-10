@@ -45,16 +45,21 @@
 }
 .links{
     cursor: pointer;
-    padding: 0px 4px;
+    padding: 0px 6px;
+    margin: 13px;
 }
-#a ,#b {
-    border-right: 1px solid black;
-}
+/* #a ,#b {
+    /* border-right: 1px solid black; */
+/* } */
 
 #nav a:hover{
-    text-decoration: underline;
-    color: black;
-    
+    font-size: 17px;
+    font-weight: 600;
+    border-bottom: 1.7px solid #00BFFF;
+    /* text-decoration: underline; */
+    /* background-color: #00BFFF; */
+    border-radius: 10px;
+    color: #00BFFF;
 }
 /* .search{
 padding-right: 17px;

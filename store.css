@@ -9,17 +9,14 @@
     background-color: #00BFFF;
 }
 .links {
-    color: whitesmoke;
+    color:whitesmoke;
     cursor: pointer;
     padding: 0px 5px;
-}
-#a ,#b ,#c{
-    border-right: 1px solid whitesmoke;
+    margin: 13px;
 }
 
 #nav a:hover {
-    text-decoration: underline;
-    color: black;
+   
 }
 /* NAV ENDS */
 /* BODY STARTS */
