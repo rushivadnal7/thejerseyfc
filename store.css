@@ -9,15 +9,18 @@
     background-color: #00BFFF;
 }
 .links {
+    
     color:whitesmoke;
     cursor: pointer;
-    padding: 0px 5px;
-    margin: 13px;
+    padding: 2px 5px;
+    margin: 0px 7px;
+    border: 2.5px solid transparent;
+}
+.links:hover{
+    border-radius: 7px;
+    border-bottom: 2px solid white;
 }
 
-#nav a:hover {
-   
-}
 /* NAV ENDS */
 /* BODY STARTS */
 #body h3{
@@ -49,6 +52,7 @@ section{
     width: 250px;
     border-radius: 5px
 }
+
 @media screen and (max-width: 450px) {
    
     section{

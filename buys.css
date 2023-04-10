@@ -11,14 +11,21 @@
 }
 
 .links {
-    color: whitesmoke;
+    color:white;
     cursor: pointer;
-    padding: 0px 5px;
+    padding: 2px 5px;
+    margin: 0px 7px;
+    border: 2.5px solid transparent;
+}
+.links:hover{
+    text-decoration: none;
+    border-radius: 7px;
+    border-bottom: 2px solid white;
 }
 
-#a ,#b ,#c{
+/* #a ,#b ,#c{
     border-right: 1px solid black;
-}
+} */
 
 #nav a:hover {
     text-decoration: underline;
