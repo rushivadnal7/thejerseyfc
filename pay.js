@@ -9,9 +9,9 @@ function sendEmail(e) {
     obj.COD = paymentMethodCOD.checked; 
     localStorage.setItem("mysite", JSON.stringify(obj));
     // console.log(obj)
-    // console.log(mySite)
     
     let mySite = JSON.parse(localStorage.getItem("mysite"));
+    console.log(mySite)
     fetch('https://jersey-fc-default-rtdb.firebaseio.com/users.json', {
         method: 'POST',
         body: JSON.stringify(mySite),
@@ -21,6 +21,7 @@ function sendEmail(e) {
     }).then(response => response.json())
         .then(data => console.log(data));
 }
+console.log(document.querySelector("#probtn"))
 document.querySelector("#probtn").addEventListener("click", sendEmail);
 
 // function check(){

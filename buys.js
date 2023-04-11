@@ -6,8 +6,9 @@ const clubName = document.getElementById("clubName");
 
 fetch('https://jersey-fc-default-rtdb.firebaseio.com/users.json').then(res=>res.json()).then(data=>console.log(data))
 
+
 let currentPrice = 500;
-if (checkBox1.checked) {
+if (checkBox1 && checkBox1.checked) {
     currentPrice += 150;
 
 }
@@ -16,7 +17,7 @@ if (checkBox2 && checkBox2.checked) {
 }
 priceElement.textContent = `₹${currentPrice} Only`;
 // console.log(currentPrice)
-checkBox1.addEventListener("change", e => {
+checkBox1 && checkBox1.addEventListener("change", e => {
     const quantity = +jerseyQuantity.value;
 
     if (e.target.checked) {
@@ -43,7 +44,7 @@ checkBox1.addEventListener("change", e => {
 jerseyQuantity.addEventListener("change", e => {
     const quantity = +e.target.value;
     console.log(quantity);
-    if (checkBox1.checked) {
+    if (checkBox1 && checkBox1.checked) {
         currentPrice = 650 * quantity
     }
     else {
@@ -51,36 +52,37 @@ jerseyQuantity.addEventListener("change", e => {
     }
     // currentPrice = currentPrice * quantity;
     // currentPrice+= (+e.target.value);
-    priceElement.textContent = `₹${currentPrice} Only + 50 shipping charges   `;
+    priceElement.textContent = `₹${currentPrice} `;
 });
 
 
 
 document.querySelector("#buybtn").addEventListener("click", e => {
+    // e.preventDefault();
     if (!localStorage.getItem("mysite")) {
         localStorage.setItem("mysite", JSON.stringify({}));
     }
     const obj = JSON.parse(localStorage.getItem("mysite"));
     obj.clubName = clubName.textContent;
-    // console.log(obj)
     obj.quantity = jerseyQuantity.value;
     obj.size = sizeselect.value;
-    if (checkBox1.checked) {
+    if ( checkBox1 && checkBox1.checked) {
         obj.shorts = "with shorts";
     }
     else {
         obj.shorts = "";
     }
     // if(checkBox2.checked){
-    //     obj.sleeves= "full sleeves";
+        //     obj.sleeves= "full sleeves";
     // }
     // else{
-    //     obj.sleeves = "";
-    // }
-    obj.finalprice = currentPrice;
-    localStorage.setItem("mysite", JSON.stringify(obj));
-    checkBox1.checked = false;
-    priceElement.textContent = `₹${500} Only`;
-    jerseyQuantity.value = "1";
-    // checkBox2.checked=false; 
+        //     obj.sleeves = "";
+        // }
+        obj.finalprice = currentPrice;
+        localStorage.setItem("mysite", JSON.stringify(obj));
+        checkBox1 && (checkBox1.checked = false);
+        priceElement.textContent = `₹${500} Only`;
+        jerseyQuantity.value = "1";
+        // checkBox2.checked=false; 
+        console.log(obj)
 })

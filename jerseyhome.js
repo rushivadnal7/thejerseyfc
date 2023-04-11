@@ -28,9 +28,11 @@ const changeiplprices2 = function (price) {
 let prevPrice = "800"
 let newPrice = "500"
 changeprices(`${prevPrice} ${newPrice}`)
+
 let previplPrice = "450"
 let newiplPrice = "350"
 changeiplprices(`${previplPrice} ${newiplPrice}`)
+
 let previplPrice2 = "650"
 let newiplPrice2 = "500"
 changeiplprices2(`${previplPrice2} ${newiplPrice2}`)
